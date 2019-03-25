@@ -12,6 +12,7 @@ class Doctor {
   String bio
 
     static constraints = {
+      //initialize constraints
       fullName nullable:false, blank:false
       qualification nullable:false, blank:false
       position nullable:false, blank:false

@@ -11,6 +11,7 @@ class Patient {
   int patientPhone
 
     static constraints = {
+      //initialize constraints
       patientName nullable:false, blank:false
       patientAdress nullable:false, blank:false
       patientResidence nullable:false, blank:false

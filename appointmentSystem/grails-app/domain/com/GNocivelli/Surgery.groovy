@@ -9,7 +9,7 @@ class Surgery {
   int numberOfPatients
   String description
   String openingTime
-
+  Boolean registeringNewPatient
     static constraints = {
       //initialize constraints
       name nullable:false, blank:false
@@ -19,5 +19,6 @@ class Surgery {
       numberOfPatients nullable:false, blank:false , max: 50
       description nullable:false, blank:false, maxSize:5000, widget: 'textarea'
       openingTime nullable:false, blank:false
+      registeringNewPatient nullable:false, blank:false
     }
 }

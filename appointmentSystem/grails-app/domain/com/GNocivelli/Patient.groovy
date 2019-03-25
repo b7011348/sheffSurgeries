@@ -11,5 +11,12 @@ class Patient {
   int patientPhone
 
     static constraints = {
+      patientName nullable:false, blank:false
+      patientAdress nullable:false, blank:false
+      patientResidence nullable:false, blank:false
+      patientDob nullable:false, blank:false
+      patientID nullable:false, blank:false, unique: true
+      dateRegistered nullable:false, blank:false
+      patientPhone nullable:false, blank:false, size: 9..11
     }
 }

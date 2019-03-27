@@ -6,12 +6,12 @@ class Nurse {
   String qualifications
   String nurseEmail
   String nurseOffice
-  int nursePhone
+  String nursePhone
 
   //links to other domains
   static hasMany=[doctors: Doctor]
   static belongsTo=Surgery
-  
+
     static constraints = {
       //initialize constraints
       nurseName nullable:false, blank:false

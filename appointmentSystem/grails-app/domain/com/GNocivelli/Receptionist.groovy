@@ -6,7 +6,7 @@ class Receptionist {
   String recepEmail
   String recepUsername
   String recepPassword
-  int recepPhone
+  String recepPhone
 
   //links to other domains
   static belongsTo=Surgery

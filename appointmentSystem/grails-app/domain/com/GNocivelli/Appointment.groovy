@@ -6,6 +6,12 @@ class Appointment {
   String appTime
   int appDuration
   String roomNumber
+
+  //links to other domains
+  Patient patient
+  static belongsTo=Doctor
+  static hasMany=[surguries: Surgery]
+
     static constraints = {
       //initialize constraints
       appDate nullable:false, blank:false

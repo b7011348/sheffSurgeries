@@ -10,6 +10,10 @@ class Patient {
   Date dateRegistered
   int patientPhone
 
+  //links to other domains
+  Appointment appointment
+  static hasMany=[surgeries: Surgery, prescriptions: Prescription, doctors: Doctor]
+
     static constraints = {
       //initialize constraints
       patientName nullable:false, blank:false

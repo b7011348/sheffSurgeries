@@ -9,6 +9,10 @@ class Prescription {
   Date dateIssued
   int daysSupply
   Boolean patientPaying
+
+  //links to other domains
+  static belongsTo=Doctor, Patient
+
     static constraints = {
       //initialize constraints
       pharamacyName nullable:false, blank:false

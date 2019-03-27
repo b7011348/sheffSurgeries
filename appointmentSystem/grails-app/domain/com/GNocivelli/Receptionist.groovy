@@ -7,6 +7,10 @@ class Receptionist {
   String recepUsername
   String recepPassword
   int recepPhone
+
+  //links to other domains
+  static belongsTo=Surgery
+
     static constraints = {
       //initialize constraints
       recepName nullable:false, blank:false

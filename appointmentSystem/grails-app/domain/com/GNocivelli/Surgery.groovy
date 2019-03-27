@@ -10,6 +10,11 @@ class Surgery {
   String description
   String openingTime
   Boolean registeringNewPatient
+
+  //links to other domains
+  static belongsTo=Appointment
+  static hasMany=[nurses: Nurse, doctors: Doctor, receptionists: Receptionist, patients: Patient]
+
     static constraints = {
       //initialize constraints
       name nullable:false, blank:false

@@ -11,8 +11,14 @@ class Doctor {
   int doctorPhone
   String bio
 
-    static constraints = {
+  //links to other domains
+  static belongsTo=Surgery
+  static hasMany=[prescriptions: Prescription, nurses: Nurse, apointments: Appointment, patients: Patient]
+
+
+      static constraints = {
       //initialize constraints
+
       fullName nullable:false, blank:false
       qualification nullable:false, blank:false
       position nullable:false, blank:false

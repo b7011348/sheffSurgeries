@@ -8,8 +8,7 @@ class Appointment {
   String roomNumber
 
   //links to other domains
-  Patient patient
-  static belongsTo=Doctor
+  Patient thePatient
   static hasMany=[surguries: Surgery]
 
     static constraints = {
@@ -18,6 +17,6 @@ class Appointment {
       appTime nullable:false, blank:false
       appDuration nullable:false, blank:false
       roomNumber nullable:false, blank:false, size: 6..6
-            
+
     }
 }

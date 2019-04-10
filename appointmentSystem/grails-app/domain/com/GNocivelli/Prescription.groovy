@@ -11,7 +11,6 @@ class Prescription {
   Boolean patientPaying
 
   //links to other domains
-  static belongsTo=Doctor, Patient
 
     static constraints = {
       //initialize constraints

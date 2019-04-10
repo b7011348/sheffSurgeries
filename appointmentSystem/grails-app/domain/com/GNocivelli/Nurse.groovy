@@ -10,7 +10,7 @@ class Nurse {
 
   //links to other domains
   static hasMany=[doctors: Doctor]
-  static belongsTo=Surgery
+  static belongsTo=Doctor
 
     static constraints = {
       //initialize constraints

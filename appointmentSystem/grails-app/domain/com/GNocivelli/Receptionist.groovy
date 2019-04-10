@@ -9,7 +9,6 @@ class Receptionist {
   String recepPhone
 
   //links to other domains
-  static belongsTo=Surgery
 
     static constraints = {
       //initialize constraints

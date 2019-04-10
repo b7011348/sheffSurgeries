@@ -12,7 +12,6 @@ class Doctor {
   String bio
 
   //links to other domains
-  static belongsTo=Surgery
   static hasMany=[prescriptions: Prescription, nurses: Nurse, apointments: Appointment, patients: Patient]
 
 

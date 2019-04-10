@@ -11,8 +11,9 @@ class Patient {
   String patientPhone
 
   //links to other domains
-  Appointment appointment
+  Appointment theAppointment
   static hasMany=[surgeries: Surgery, prescriptions: Prescription, doctors: Doctor]
+  static belongsTo=[Doctor, Surgery]
 
     static constraints = {
       //initialize constraints

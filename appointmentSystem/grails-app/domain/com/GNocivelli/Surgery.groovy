@@ -12,7 +12,7 @@ class Surgery {
   Boolean registeringNewPatient
 
   //links to other domains
-  static hasMany=[nurses: Nurse, doctors: Doctor, receptionists: Receptionist, patients: Patient]
+  static hasMany=[nurses: Nurse, doctors: Doctor, receptionists: Receptionist, patients: Patient, appointments: Appointment]
 
     static constraints = {
       //initialize constraints

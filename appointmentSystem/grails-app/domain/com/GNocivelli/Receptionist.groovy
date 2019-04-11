@@ -9,7 +9,7 @@ class Receptionist {
   String recepPhone
 
   //links to other domains
-
+  Surgery theSurgery
     static constraints = {
       //initialize constraints
       recepName nullable:false, blank:false

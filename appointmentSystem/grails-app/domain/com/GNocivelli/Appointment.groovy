@@ -9,7 +9,8 @@ class Appointment {
 
   //links to other domains
   Patient thePatient
-  static hasMany=[surguries: Surgery]
+  Doctor theDoctor
+  Surgery theSurgery
 
     static constraints = {
       //initialize constraints

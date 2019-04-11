@@ -5,13 +5,15 @@ class Prescription {
   String pharamacyName
   int prescripNumber
   String medicine
-  double totalCost
+  String totalCost
   Date dateIssued
   int daysSupply
   Boolean patientPaying
 
   //links to other domains
-
+  Doctor theDoctor
+  Patient thePatient
+  
     static constraints = {
       //initialize constraints
       pharamacyName nullable:false, blank:false

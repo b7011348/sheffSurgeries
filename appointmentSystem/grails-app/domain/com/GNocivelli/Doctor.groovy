@@ -12,8 +12,8 @@ class Doctor {
   String bio
 
   //links to other domains
-  static hasMany=[prescriptions: Prescription, nurses: Nurse, apointments: Appointment, patients: Patient]
-
+  static hasMany=[prescriptions: Prescription, nurses: Nurse, appointments: Appointment, patients: Patient]
+  Surgery theSurgery
 
       static constraints = {
       //initialize constraints
